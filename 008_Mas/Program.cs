@@ -6,17 +6,12 @@
     return result;
 }
 
-int a = 1;
-int b = 8;
-int c = 31;
-int d = 6;
-int e = 2;
-int f = 13;
-int g = 17;
-int h = 4;
-int i = 9;
+int [] array = {2,6,8,1,15,8,3,12,7};
 
-int max = Max(Max(a, b, c), Max(d, e, f), Max(g, h, i));
+int result = Max(
+    Max(array[0], array[1], array[2]),
+    Max(array[3], array[4], array[5]),
+    Max(array[6], array[7], array[8]));
 
-Console.Write("max = ");
-Console.Write(max);
+Console.Write("result = ");
+Console.Write(result);
