@@ -16,10 +16,7 @@ int g = 17;
 int h = 4;
 int i = 9;
 
-int max1 = Max(a, b, c);
-int max2 = Max(d, e, f);
-int max3 = Max(g, h, i);
-int max = Max(max1, max2, max3);
+int max = Max(Max(a, b, c), Max(d, e, f), Max(g, h, i));
 
 Console.Write("max = ");
 Console.Write(max);
